@@ -1,0 +1,9 @@
+{
+  "name": "multi-llm-doc-assistant",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\"",
+    "install-all": "npm install --workspaces"
+  },
+  "workspaces": ["frontend", "backend"]
+}
